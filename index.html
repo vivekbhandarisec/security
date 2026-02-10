@@ -1,207 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Application Security Analyst</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Application Security Engineer</title>
 
-  <style>
-    :root {
-      --bg: #0b0f14;
-      --panel: #0f1623;
-      --text: #d1d7e0;
-      --muted: #8b949e;
-      --accent: #58a6ff;
-      --border: #1f2937;
-    }
+<style>
+:root{
+--bg:#050810;
+--panel:#0b1220;
+--panel2:#0f172a;
+--text:#dbe4f0;
+--muted:#8b9bb3;
+--accent:#3b82f6;
+--accentGlow:rgba(59,130,246,0.25);
+--border:#1e293b;
+}
 
-    body {
-      margin: 0;
-      background: linear-gradient(180deg, #0b0f14 0%, #020617 100%);
-      color: var(--text);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.7;
-    }
+body{
+margin:0;
+background: radial-gradient(circle at 20% 0%, #0b1220 0%, #020617 60%);
+color:var(--text);
+font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+line-height:1.7;
+}
 
-    .container {
-      max-width: 880px;
-      margin: auto;
-      padding: 70px 20px;
-    }
+.container{
+max-width:920px;
+margin:auto;
+padding:80px 24px;
+}
 
-    /* HERO */
-    .hero {
-      margin-bottom: 80px;
-    }
+/* HERO */
+.hero{
+margin-bottom:80px;
+}
 
-    .hero h1 {
-      font-size: 2.4rem;
-      margin-bottom: 10px;
-      color: white;
-    }
+.hero h1{
+font-size:2.6rem;
+margin-bottom:12px;
+color:white;
+letter-spacing:-0.5px;
+}
 
-    .hero p {
-      color: var(--muted);
-      font-size: 1.05rem;
-      max-width: 650px;
-    }
+.hero p{
+color:var(--muted);
+max-width:680px;
+font-size:1.1rem;
+}
 
-    /* SECTION */
-    section {
-      margin-bottom: 70px;
-      padding-left: 18px;
-      border-left: 3px solid var(--accent);
-    }
+/* SECTION */
+section{
+margin-bottom:70px;
+padding:30px;
+background:linear-gradient(160deg,var(--panel),var(--panel2));
+border:1px solid var(--border);
+border-radius:14px;
+box-shadow:0 0 0 1px rgba(59,130,246,0.05),
+0 10px 30px rgba(0,0,0,0.5);
+}
 
-    section h2 {
-      color: var(--accent);
-      font-size: 1.25rem;
-      margin-bottom: 15px;
-    }
+section h2{
+color:var(--accent);
+margin-top:0;
+margin-bottom:18px;
+font-size:1.3rem;
+}
 
-    ul {
-      padding-left: 18px;
-    }
+ul{
+padding-left:20px;
+}
 
-    li {
-      margin: 6px 0;
-    }
+li{
+margin:8px 0;
+}
 
-    /* HIGHLIGHT STRIP */
-    .highlight {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 25px;
-      margin-top: 25px;
-    }
+/* CARD */
+.highlight{
+margin-top:20px;
+padding:25px;
+border-radius:12px;
+background:rgba(15,23,42,0.7);
+border:1px solid var(--border);
+box-shadow:0 0 20px var(--accentGlow);
+}
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-    }
+/* CTA */
+.cta{
+background:linear-gradient(140deg,#020617,#0f172a);
+border:1px solid var(--border);
+box-shadow:0 0 25px var(--accentGlow);
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+a{
+color:var(--accent);
+text-decoration:none;
+font-weight:500;
+}
 
-    /* CTA */
-    .cta {
-      background: linear-gradient(135deg, #0f172a, #020617);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 30px;
-    }
+a:hover{
+text-decoration:underline;
+}
 
-    .cta h2 {
-      margin-top: 0;
-    }
-
-    footer {
-      margin-top: 90px;
-      font-size: 0.85rem;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-      padding-top: 25px;
-    }
-  </style>
+footer{
+margin-top:80px;
+font-size:0.85rem;
+color:var(--muted);
+border-top:1px solid var(--border);
+padding-top:25px;
+}
+</style>
 </head>
 
 <body>
-  <div class="container">
 
-    <!-- HERO -->
-    <div class="hero">
-      <h1>🔐 Web Application Security Analyst</h1>
-      <p>
-        Freelance Web Application Security | OWASP Top 10 |
-        Manual Black-Box Testing & Clear, Actionable Reporting
-      </p>
-    </div>
+<div class="container">
 
-    <!-- ABOUT -->
-    <section>
-      <h2>About</h2>
-      <p>
-        I help developers and small teams identify <strong>critical security
-        vulnerabilities</strong> in their web applications before attackers do.
-      </p>
-      <p>
-        My work focuses on realistic attack scenarios, clear business impact,
-        and remediation guidance developers can immediately apply.
-      </p>
-      <p>
-        I specialize in <strong>manual black-box testing</strong> — not automated scan dumps.
-      </p>
-    </section>
+<!-- HERO -->
+<div class="hero">
+<h1>🔐 Web Application Security Engineer</h1>
+<p>
+Freelance Web Application Security • Authentication • API Security • Access Control •
+Manual Black-Box Testing with Fix-Focused Reporting
+</p>
+</div>
 
-    <!-- SERVICES -->
-    <section>
-      <h2>Services</h2>
-      <ul>
-        <li>OWASP Top 10 Web Application Security Review</li>
-        <li>Manual Black-Box Security Testing</li>
-        <li>Vulnerability Identification & Validation</li>
-        <li>Security Risk & Impact Analysis</li>
-        <li>Remediation & Secure Coding Guidance</li>
-      </ul>
-    </section>
+<!-- ABOUT -->
+<section>
+<h2>About</h2>
+<p>
+I help developers, startups, and small teams identify <strong>real, exploitable security risks</strong>
+in web applications before attackers or bug bounty hunters do.
+</p>
 
-    <!-- DELIVERABLES -->
-    <section>
-      <h2>What You Get</h2>
-      <ul>
-        <li>Professional security assessment report (PDF)</li>
-        <li>Clear severity ratings (High / Medium / Low)</li>
-        <li>Real-world impact explanation</li>
-        <li>Actionable remediation steps</li>
-        <li>Clean, client-ready documentation</li>
-      </ul>
-    </section>
+<p>
+My testing focuses on realistic attack paths including authentication bypass,
+API authorization failures, data exposure risks, and business logic abuse.
+</p>
 
-    <!-- SAMPLE WORK -->
-    <section>
-      <h2>Sample Work</h2>
+<p>
+I specialize in <strong>manual security testing</strong> — not automated scanner reports —
+with clear remediation guidance developers can implement quickly.
+</p>
+</section>
 
-      <div class="highlight">
-        <p><strong>Web Application Security Assessment – OWASP Top 10</strong></p>
-        <p>
-          Identified vulnerabilities:
-        </p>
-        <ul>
-          <li>SQL Injection (Authentication & Data Access Impact)</li>
-          <li>Broken Access Control (IDOR)</li>
-          <li>Cross-Site Scripting (XSS)</li>
-        </ul>
+<!-- SERVICES -->
+<section>
+<h2>Security Services</h2>
 
-        <p>
-          📎 <a href="sample_report.pdf">Download Sample Report</a>
-        </p>
-      </div>
-    </section>
+<ul>
+<li>Web Application Security Assessment (OWASP Top 10 Risk Coverage)</li>
+<li>Authentication & Session Security Testing</li>
+<li>API Authorization Testing (IDOR, Access Control, Token Abuse)</li>
+<li>Business Logic & Workflow Abuse Testing</li>
+<li>Pre-Release Security Review for Startups & SaaS Products</li>
+<li>Manual Black-Box Penetration Testing</li>
+<li>Vulnerability Validation & Exploitability Verification</li>
+<li>Fix-Focused Remediation Guidance</li>
+</ul>
 
-    <!-- CTA -->
-    <section class="cta">
-      <h2>Want to know the real risks in your application?</h2>
-      <p>
-        If you’re unsure whether your application is vulnerable to common web
-        attacks, I offer a straightforward security review with clear,
-        actionable results.
-      </p>
-      <p>
-        📧 <strong>Email:</strong> vivekbhandari.sec@gmail.com
-      </p>
-      <p style="font-size:0.9rem;color:var(--muted);">
-        Initial discussions are free.
-      </p>
-    </section>
+</section>
 
-    <footer>
-      ⚠️ All testing demonstrated was performed in controlled lab environments.
-      No unauthorized testing was conducted.
-    </footer>
+<!-- DELIVERABLES -->
+<section>
+<h2>What Clients Receive</h2>
 
-  </div>
+<ul>
+<li>Professional Security Assessment Report (Client Ready)</li>
+<li>Clear Severity Ratings (Critical / High / Medium / Low)</li>
+<li>Real Business Impact Explanation</li>
+<li>Step-by-Step Reproduction Guidance</li>
+<li>Developer-Friendly Fix Recommendations</li>
+<li>Optional Follow-Up Clarification Session</li>
+</ul>
+
+</section>
+
+<!-- SAMPLE WORK -->
+<section>
+<h2>Sample Assessment Work</h2>
+
+<div class="highlight">
+
+<p><strong>Web Application Security Assessment – Real Attack Scenarios</strong></p>
+
+<ul>
+<li>Authentication SQL Injection → Account Compromise Risk</li>
+<li>Broken Access Control (IDOR) → Unauthorized Data Exposure</li>
+<li>Stored / Reflected XSS → Session & Data Theft Risk</li>
+</ul>
+
+<p>
+📎 <a href="sample_report.pdf">Download Sample Security Report</a>
+</p>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+
+<h2>Need to understand real security risks in your application?</h2>
+
+<p>
+If you're preparing for launch, scaling users, or unsure about authentication,
+API security, or data exposure risks — I provide clear, actionable security reviews.
+</p>
+
+<p>
+📧 <strong>Email:</strong> vivekbhandari.sec@gmail.com
+</p>
+
+<p style="font-size:0.9rem;color:var(--muted);">
+Initial consultation is free. Security reviews are structured and scope-based.
+</p>
+
+</section>
+
+<footer>
+⚠️ All demonstrations and testing samples are performed in controlled lab environments.
+No unauthorized testing is performed.
+</footer>
+
+</div>
+
 </body>
 </html>
