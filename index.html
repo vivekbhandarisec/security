@@ -1,229 +1,317 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web Application Security Engineer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivek Bhandari | Offensive Web Security</title>
+    <meta
+      name="description"
+      content="Portfolio of Vivek Bhandari - Web CTF Player, Web Security Analyst, and Bug Bounty Hunter."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <noscript>
+      <style>
+        .intro-loader {
+          display: none !important;
+        }
+        .site-header,
+        main {
+          opacity: 1 !important;
+          transform: none !important;
+          filter: none !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body class="is-loading">
+    <div class="intro-loader" id="introLoader" aria-hidden="true">
+      <div class="loader-core">
+        <p class="loader-tag">INITIALIZING OFFENSIVE STACK</p>
+        <h2>VIVEK BHANDARI // WEBSEC</h2>
+        <div class="loader-line">
+          <span id="loaderBar"></span>
+        </div>
+        <p class="loader-percent" id="loaderPercent">0%</p>
+      </div>
+    </div>
 
-<style>
-:root{
---bg:#050810;
---panel:#0b1220;
---panel2:#0f172a;
---text:#dbe4f0;
---muted:#8b9bb3;
---accent:#3b82f6;
---accentGlow:rgba(59,130,246,0.25);
---border:#1e293b;
-}
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="grid-lines" aria-hidden="true"></div>
 
-body{
-margin:0;
-background: radial-gradient(circle at 20% 0%, #0b1220 0%, #020617 60%);
-color:var(--text);
-font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-line-height:1.7;
-}
+    <header class="site-header" id="top">
+      <nav class="nav-wrap">
+        <a class="brand" href="#top">VIVEK BHANDARI<span> // WEBSEC</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">MENU</button>
+        <div class="nav-links" id="navLinks">
+          <a href="#roles">Roles</a>
+          <a href="#arsenal">Arsenal</a>
+          <a href="#projects">Ops</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
 
-.container{
-max-width:920px;
-margin:auto;
-padding:80px 24px;
-}
+    <main>
+      <section class="hero section" data-section="top">
+        <div class="hero-copy" data-parallax="10">
+          <p class="eyebrow">OFFENSIVE WEB SECURITY PORTFOLIO</p>
+          <h1>
+            I weaponize curiosity,
+            <span>break web assumptions,</span>
+            and secure products with precision.
+          </h1>
+          <p>
+            I am Vivek Bhandari - Web CTF Player, Web Security Analyst, and Bug
+            Bounty Hunter. I uncover exploit chains, quantify impact, and convert
+            findings into practical remediation strategies.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary magnetic" href="#projects">View Operations</a>
+            <a class="btn btn-secondary magnetic" href="#contact">Work With Me</a>
+          </div>
+        </div>
 
-/* HERO */
-.hero{
-margin-bottom:80px;
-}
+        <aside class="hero-terminal tilt-card" data-parallax="16">
+          <div class="terminal-head">
+            <span></span><span></span><span></span>
+            <p>live_ops.log</p>
+          </div>
+          <div class="terminal-body">
+            <p><strong>target:</strong> web-application perimeter</p>
+            <p><strong>mode:</strong> recon + exploitation + validation</p>
+            <p><strong>status:</strong> <span class="ok">active</span></p>
+            <p class="typed" id="typedLine"></p>
+          </div>
+        </aside>
+      </section>
 
-.hero h1{
-font-size:2.6rem;
-margin-bottom:12px;
-color:white;
-letter-spacing:-0.5px;
-}
+      <section class="stats section reveal">
+        <article>
+          <p class="label">Current Focus</p>
+          <h3>Advanced Web Exploitation</h3>
+        </article>
+        <article>
+          <p class="label">Primary Arena</p>
+          <h3>CTFs + Live Bug Bounty Programs</h3>
+        </article>
+        <article>
+          <p class="label">Specialization</p>
+          <h3>Authentication and Business Logic</h3>
+        </article>
+      </section>
 
-.hero p{
-color:var(--muted);
-max-width:680px;
-font-size:1.1rem;
-}
+      <section id="roles" class="section">
+        <div class="section-head reveal">
+          <p class="eyebrow">THREE IDENTITIES</p>
+          <h2>Field roles with execution depth</h2>
+        </div>
 
-/* SECTION */
-section{
-margin-bottom:70px;
-padding:30px;
-background:linear-gradient(160deg,var(--panel),var(--panel2));
-border:1px solid var(--border);
-border-radius:14px;
-box-shadow:0 0 0 1px rgba(59,130,246,0.05),
-0 10px 30px rgba(0,0,0,0.5);
-}
+        <div class="role-grid">
+          <article class="role-card reveal tilt-card">
+            <p class="role-tag">01</p>
+            <h3>Web CTF Player</h3>
+            <p>
+              Rapid recon and payload iteration across XSS, SSRF, template
+              injection, IDOR, and auth bypass chains.
+            </p>
+            <ul>
+              <li>Fast attack surface mapping</li>
+              <li>Exploit development under pressure</li>
+              <li>Writeups with reproducible attack paths</li>
+            </ul>
+          </article>
 
-section h2{
-color:var(--accent);
-margin-top:0;
-margin-bottom:18px;
-font-size:1.3rem;
-}
+          <article class="role-card reveal tilt-card">
+            <p class="role-tag">02</p>
+            <h3>Web Security Analyst</h3>
+            <p>
+              Deep analysis of exploit viability, blast radius, and business
+              impact with engineering-first remediation guidance.
+            </p>
+            <ul>
+              <li>Threat modeling and abuse-case analysis</li>
+              <li>Code-aware risk prioritization</li>
+              <li>Fix validation and retest workflow</li>
+            </ul>
+          </article>
 
-ul{
-padding-left:20px;
-}
+          <article class="role-card reveal tilt-card">
+            <p class="role-tag">03</p>
+            <h3>Bug Bounty Hunter</h3>
+            <p>
+              High-signal vulnerability hunting focused on critical findings,
+              clear impact proof, and responsible disclosure.
+            </p>
+            <ul>
+              <li>Impact-first finding triage</li>
+              <li>Proof-of-concept clarity</li>
+              <li>Professional disclosure communication</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-li{
-margin:8px 0;
-}
+      <section id="arsenal" class="section">
+        <div class="section-head reveal">
+          <p class="eyebrow">TACTICAL ARSENAL</p>
+          <h2>Core security capabilities</h2>
+        </div>
 
-/* CARD */
-.highlight{
-margin-top:20px;
-padding:25px;
-border-radius:12px;
-background:rgba(15,23,42,0.7);
-border:1px solid var(--border);
-box-shadow:0 0 20px var(--accentGlow);
-}
+        <div class="arsenal-panel reveal">
+          <ul class="capability-list">
+            <li>Web Application Security Testing (IDOR, Auth, Access Control)</li>
+            <li>API Security Testing</li>
+            <li>Manual Testing with Burp Suite</li>
+            <li>Subdomain Enumeration and Recon Automation</li>
+            <li>Python-Based Security Tool Development</li>
+            <li>Role-Based Access Control Design</li>
+            <li>Linux Security Testing Environment</li>
+            <li>Git and Project Version Control</li>
+            <li>Business Logic Vulnerability Analysis</li>
+          </ul>
+          <p>
+            Delivery model: threat-driven testing, clear exploit validation, and
+            remediation-ready reporting for engineering teams.
+          </p>
+        </div>
+      </section>
 
-/* CTA */
-.cta{
-background:linear-gradient(140deg,#020617,#0f172a);
-border:1px solid var(--border);
-box-shadow:0 0 25px var(--accentGlow);
-}
+      <section id="projects" class="section">
+        <div class="section-head reveal">
+          <p class="eyebrow">SELECTED OPS</p>
+          <h2>Security operation snapshots</h2>
+        </div>
 
-a{
-color:var(--accent);
-text-decoration:none;
-font-weight:500;
-}
+        <div class="project-grid">
+          <article class="project-card featured-project reveal tilt-card">
+            <p class="project-type">Featured Build</p>
+            <h3>URLPathGuard - Intelligent URL Threat Detection Engine</h3>
+            <p>
+              Modular security pipeline that ingests HTTP logs/PCAP-derived data,
+              normalizes URL paths and parameters, and detects attacks like path
+              traversal, XSS payloads, unauthorized access attempts, and malicious
+              parameter tampering.
+            </p>
+            <p>
+              Designed around ingestion, parsing, detection, enrichment, and alert
+              layers to simulate practical SOC workflows with scalable architecture.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/vivekbhandarisec/URLPATHGUARD"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on GitHub
+            </a>
+          </article>
 
-a:hover{
-text-decoration:underline;
-}
+          <article class="project-card reveal tilt-card">
+            <p class="project-type">Assessment Practice</p>
+            <h3>OWASP Top 10 Web Security Testing</h3>
+            <p>
+              Performed web application security testing aligned with OWASP Top 10
+              risk categories, including authentication, access control, injection,
+              and security misconfiguration assessments.
+            </p>
+            <a
+              class="project-link"
+              href="https://vivekbhandarisec.github.io/security/sample_report.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Sample Report
+            </a>
+          </article>
 
-footer{
-margin-top:80px;
-font-size:0.85rem;
-color:var(--muted);
-border-top:1px solid var(--border);
-padding-top:25px;
-}
-</style>
-</head>
+          <article class="project-card maint-project reveal tilt-card">
+            <div class="project-status-row">
+              <p class="project-type">Recon Platform</p>
+              <span class="project-status">Maintenance</span>
+            </div>
+            <h3>ZeroStalker - Recon and Surface Mapping Tool</h3>
+            <p>
+              Lightweight reconnaissance engine for security researchers and bug
+              bounty workflows, focused on discovering exposed subdomains, live
+              hosts, and high-value external attack surface.
+            </p>
+            <p>
+              Automates early-phase recon by collecting public intelligence,
+              filtering active assets, and organizing results into structured
+              output for faster investigation and prioritization.
+            </p>
+            <p class="project-note">
+              Built with a modular design for future endpoint discovery, tech
+              fingerprinting, and vulnerability pattern detection integrations.
+            </p>
+          </article>
+        </div>
+      </section>
 
-<body>
+      <section id="contact" class="section contact">
+        <div class="contact-panel reveal" data-parallax="8">
+          <p class="eyebrow">OPEN FOR SECURITY ENGAGEMENTS</p>
+          <h2>Build fast. Ship safe. Break less.</h2>
+          <p>
+            Available for web application security testing, vulnerability
+            assessments, and offensive security collaborations.
+          </p>
+          <div class="contact-actions">
+            <a
+              class="contact-cta magnetic"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=vivekbhandari.sec%40gmail.com&su=Security%20Collaboration%20Request"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Contact Me
+            </a>
+            <div class="social-icons">
+              <a
+                class="icon-link"
+                href="https://github.com/vivekbhandarisec"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+                title="GitHub"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.21.68-.48v-1.86c-2.77.6-3.35-1.18-3.35-1.18-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.21-.25-4.54-1.1-4.54-4.9 0-1.08.39-1.96 1.02-2.64-.1-.25-.44-1.27.1-2.65 0 0 .84-.27 2.75 1.01a9.5 9.5 0 0 1 5 0c1.9-1.28 2.74-1.01 2.74-1.01.55 1.38.21 2.4.1 2.65.64.68 1.02 1.56 1.02 2.64 0 3.81-2.33 4.65-4.55 4.89.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/>
+                </svg>
+              </a>
+              <a
+                class="icon-link"
+                href="https://www.linkedin.com/in/vivekbhandarisec/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.94 8.5a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44ZM5.5 9.84h2.88V19H5.5V9.84Zm4.53 0h2.76v1.25h.04c.38-.73 1.32-1.5 2.72-1.5 2.91 0 3.45 1.91 3.45 4.39V19h-2.87v-4.45c0-1.06-.02-2.42-1.48-2.42-1.48 0-1.7 1.16-1.7 2.35V19h-2.92V9.84Z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>Crafted by Vivek Bhandari for offensive web security excellence.</p>
+    </footer>
+    <button class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 5.2 4.7 12.5l1.4 1.4 4.9-4.9V20h2V9l4.9 4.9 1.4-1.4L12 5.2Z" />
+      </svg>
+    </button>
 
-<div class="container">
-
-<!-- HERO -->
-<div class="hero">
-<h1>🔐 Web Application Security Engineer</h1>
-<p>
-Freelance Web Application Security • Authentication • API Security • Access Control •
-Manual Black-Box Testing with Fix-Focused Reporting
-</p>
-</div>
-
-<!-- ABOUT -->
-<section>
-<h2>About</h2>
-<p>
-I help developers, startups, and small teams identify <strong>real, exploitable security risks</strong>
-in web applications before attackers or bug bounty hunters do.
-</p>
-
-<p>
-My testing focuses on realistic attack paths including authentication bypass,
-API authorization failures, data exposure risks, and business logic abuse.
-</p>
-
-<p>
-I specialize in <strong>manual security testing</strong> — not automated scanner reports —
-with clear remediation guidance developers can implement quickly.
-</p>
-</section>
-
-<!-- SERVICES -->
-<section>
-<h2>Security Services</h2>
-
-<ul>
-<li>Web Application Security Assessment (OWASP Top 10 Risk Coverage)</li>
-<li>Authentication & Session Security Testing</li>
-<li>API Authorization Testing (IDOR, Access Control, Token Abuse)</li>
-<li>Business Logic & Workflow Abuse Testing</li>
-<li>Pre-Release Security Review for Startups & SaaS Products</li>
-<li>Manual Black-Box Penetration Testing</li>
-<li>Vulnerability Validation & Exploitability Verification</li>
-<li>Fix-Focused Remediation Guidance</li>
-</ul>
-
-</section>
-
-<!-- DELIVERABLES -->
-<section>
-<h2>What Clients Receive</h2>
-
-<ul>
-<li>Professional Security Assessment Report (Client Ready)</li>
-<li>Clear Severity Ratings (Critical / High / Medium / Low)</li>
-<li>Real Business Impact Explanation</li>
-<li>Step-by-Step Reproduction Guidance</li>
-<li>Developer-Friendly Fix Recommendations</li>
-<li>Optional Follow-Up Clarification Session</li>
-</ul>
-
-</section>
-
-<!-- SAMPLE WORK -->
-<section>
-<h2>Sample Assessment Work</h2>
-
-<div class="highlight">
-
-<p><strong>Web Application Security Assessment – Real Attack Scenarios</strong></p>
-
-<ul>
-<li>Authentication SQL Injection → Account Compromise Risk</li>
-<li>Broken Access Control (IDOR) → Unauthorized Data Exposure</li>
-<li>Stored / Reflected XSS → Session & Data Theft Risk</li>
-</ul>
-
-<p>
-📎 <a href="sample_report.pdf">Download Sample Security Report</a>
-</p>
-
-</div>
-
-</section>
-
-<!-- CTA -->
-<section class="cta">
-
-<h2>Need to understand real security risks in your application?</h2>
-
-<p>
-If you're preparing for launch, scaling users, or unsure about authentication,
-API security, or data exposure risks — I provide clear, actionable security reviews.
-</p>
-
-<p>
-📧 <strong>Email:</strong> vivekbhandari.sec@gmail.com
-</p>
-
-<p style="font-size:0.9rem;color:var(--muted);">
-Initial consultation is free. Security reviews are structured and scope-based.
-</p>
-
-</section>
-
-<footer>
-⚠️ All demonstrations and testing samples are performed in controlled lab environments.
-No unauthorized testing is performed.
-</footer>
-
-</div>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
